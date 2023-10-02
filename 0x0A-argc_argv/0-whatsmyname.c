@@ -1,19 +1,15 @@
 #include "main.h"
 #include <stdio.h>
-
+#define UNUSED(x) (void)(x)
 /**
- * main - print name of program, followed by a new line
- *
- * @argc: arguement count
- * @argv: arguement array
- *
- * Description: prints the name of the program
- *
- * Return: 0 on success
+ * main - main function
+ * @argc: argumentc
+ * @argv: vector of arguments
+ *Return: always 0
  */
 int main(int argc, char *argv[])
 {
-	if (argc > 0)
+	UNUSED(argc);
 	printf("%s\n", argv[0]);
 	return (0);
 }
